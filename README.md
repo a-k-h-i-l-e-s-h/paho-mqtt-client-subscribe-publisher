@@ -8,6 +8,7 @@ Please find below steps to install mqtt
 As of version 11.10 Oneiric Ocelot, mosquitto will be in the Ubuntu repositories so you can install as with any other package. If you are on an earlier version of Ubuntu or want a more recent version of mosquitto, add the mosquitto-dev PPA to your repositories list – see the link for details. mosquitto can then be installed from your package manager.
 
 ``` $ sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa ```
+
 ``` $ sudo apt-get update ```
 If the command “apt-add-repository” is not recognised, it can be installed with:
 
@@ -15,11 +16,6 @@ If the command “apt-add-repository” is not recognised, it can be installed w
 Then mosquitto can be installed with:
 
 ``` $ sudo apt-get install mosquitto ```
-
-For more please check below url:
-
-https://mosquitto.org/download/
-https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-ubuntu-16-04
 
 Log in to your server a second time, so you have two terminals side-by-side. In the new terminal, use mosquitto_sub to subscribe to the test topic:
 
@@ -46,9 +42,17 @@ To check you ip type: ipconfig or ifconfig
 Then run these file to test
 #### mqttpublish.py to publish the data
 #### mqttsuscribr.py to suscribe the data
-``` $ python3 mqttpublish.py
-    $ python3 mqttsuscribr.py
+``` 
+$ python3 mqttpublish.py
 ```
+```
+$ python3 mqttsuscribr.py
+```
+
+Please find related URL:
+
+* https://mosquitto.org/download/
+* https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-ubuntu-16-04
 
 
 
